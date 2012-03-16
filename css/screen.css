@@ -1,0 +1,338 @@
+/*
+	Project: Graphic Graffiti Designs [Relaunch]
+	Author:  Tim Howard [Graphic Graffiti Designs]
+	Website: http://timhoward.graphicgraffiti.com.au/
+	         http://graphicgraffiti.com.au/
+	Date:    Monday, January 18 2010 8:20pm
+	Copyrht: Copyright (c) 2010 Graphic Graffiti Designs
+	
+	Please do not copy our work, but feel free to use it for inspiration. We'd be grateful!
+	This is the master CSS stylesheet.
+*/
+
+/* I don't like this; Let's start over... */
+*{
+	margin:0;
+	padding:0
+	}
+*:focus,:active {
+	outline:0
+	}
+img {
+	border: 0
+	}
+/* Now let's get into business... */
+body { 
+	font: .8em "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	background: #fff; 
+	color: #000; 
+	}
+a { 
+	text-decoration: none;
+	font-weight: bold; 
+	color: #222; 
+	}
+h1 { 
+	font-size: 1.4em; 
+	font-weight: normal; 
+	}
+h1 a { 
+	color: #fff; 
+	font-size: 1.6em; 
+	}
+h2 { 
+	font-size: 1.2em; 
+	}
+h3 { 
+	font-size: 1.2em; 
+	background: #222; 
+	padding: 6px 7px; 
+	color: #fff; 
+	font-weight: normal; 
+	margin: 0 0 15px; 
+	float: left; 
+	}
+h4 { 
+	margin: 0 0 15px; 
+	color: #555;
+	font-weight: normal; 
+	font-size: 1.8em; 
+	font-weight: normal; 
+	}
+h5 {
+	margin: 0 0 15px;
+	color: #fff;
+	background: #222;
+	font-weight: normal;
+	font-size: 1.6em;
+}
+p { 
+	clear: both; 
+	line-height: 1.64em; 
+	margin: 0 0 15px; 
+	}
+.line { 
+	clear: both; 
+	border-bottom: 1px dashed #ddd; 
+	margin: 0 0 45px; 
+	}
+.pagebreak {
+	clear: both;
+	border-bottom: 1px dashed #ddd;
+	margin: 0 0 8px;
+    }
+.pageline {
+	clear: both;
+	margin: 0 0 45px;
+    }
+.spacer {
+	clear: both;
+	margin: 0 0 8px;
+    }
+.clear { 
+	clear: both; 
+	}
+/* All websites need content, or there's no point in having them... */
+#content { 
+	width: 970px; 
+	margin: 0 auto; 
+	}
+#logo { 
+	float: left; 
+	background: #222; 
+	padding: 50px 25px 15px; 
+	margin: -25px 0 0px; 
+	}
+#menu { 
+	float: right; 
+	margin: 5px 0px 0; 
+	}
+#menu li { 
+	display: inline; 
+	font-size: 1.3em; 
+	}
+#menu li a { 
+	float: left; 
+	color: #808080; 
+	padding: 0 0 5px; 
+	margin: 58px 0 0 15px; 
+	}
+#menu li a:hover, #menu li.current a, #menu li a:focus { 
+	color: #000;
+	}
+/* That's it for the top bit, now for introductions... */
+#introduction { 
+	/*background: url(../images/banner_background.jpg) no-repeat;*/
+	padding: 30px 350px 0 0; 
+	height: 425px; 
+	margin: 0 0 35px; 
+	}
+#introduction h2 {
+	font: 2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+#slider{
+	background: url(../images/banner_background.jpg) no-repeat right top;
+	width:970px;
+	position:relative;
+	height:425px;
+	border:5px solid #222;
+	}
+#slider_work {
+	width: 970px;
+	position: relative;
+	height: 100px;
+    }
+.info { 
+	float: left; 
+	width: 250px; 
+	}	
+.infopage {
+	float: left;
+	width: 970px;
+	padding-top: 20px;
+    }
+.testimonials { 
+	float: right; 
+	width: 630px; 
+	margin: 0 0 20px; 
+	}
+.testimonials h3 { 
+	background: #222; 
+	font-size: .84em; 
+	}
+.testimonials h4 {
+	background: #222;
+	font-size: 1.2em;
+    }
+.testimonials li {
+	list-style: none;
+	line-height: 1.5em;
+    }
+.testimonials a {
+	color: #fff;
+    }
+.services { 
+	float: right; 
+	width: 970px; 
+	margin: 0 0 0px; 
+	}
+.services h3 { 
+	background: #222; 
+	font-size: 1.2em; 
+	}
+.services li {
+	list-style: none;
+	line-height: 1.5em;
+	}
+.services a {
+	color: #fff;
+	}
+.social { 
+	float: right; 
+	width: 630px; 
+	margin: 0 0 20px; 
+	}
+.social h3 { 
+	background: #222; 
+	font-size: .84em; 
+	}
+.social li {
+	list-style: none;
+	line-height: 1.5em;
+	}
+.social a {
+	color: #000;
+	}
+.third { 
+	float: left; 
+	width: 296px; 
+	margin: 0 40px 20px 0; 
+	}
+.last { 
+	margin-right: 0; 
+	}
+#footer { 
+	clear: both; 
+	font-size: .84em; 
+	border-top: 1px solid #ddd; 
+	padding: 20px 0 0; 
+	}
+/* Give viewers the bird... I mean the Twitter bird that is... */
+li.twitter{
+    background: url(http://graphicgraffiti.com.au/images/social/twitter.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.facebook{
+    background: url(http://graphicgraffiti.com.au/images/social/facebook.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.flickr{
+    background: url(http://graphicgraffiti.com.au/images/social/flickr.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.digg{
+    background: url(http://graphicgraffiti.com.au/images/social/digg.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.lastfm{
+    background: url(http://graphicgraffiti.com.au/images/social/lastfm.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.delicious{
+    background: url(http://graphicgraffiti.com.au/images/social/delicious.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.technorati{
+    background: url(http://graphicgraffiti.com.au/images/social/technorati.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.youtube{
+    background: url(http://graphicgraffiti.com.au/images/social/youtube.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.friendfeed{
+    background: url(http://graphicgraffiti.com.au/images/social/friendfeed.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.vimeo{
+    background: url(http://graphicgraffiti.com.au/images/social/vimeo.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.dopplr{
+    background: url(http://graphicgraffiti.com.au/images/social/dopplr.png) no-repeat left 50%;
+    text-indent: 20px;
+    }
+li.blog{
+	background: url(http://graphicgraffiti.com.au/images/social/blog.png) no-repeat left 50%;
+	text-indent: 20px;
+}
+
+.w3valid{
+	float: right;
+}
+
+/* This is for the Work (Portfolio) page. */
+
+.worktable { 
+	float: left; 
+	width: 920px; 
+	padding: 0 10px 0 10px; 
+	}
+ul.worktable-min { 
+	width: 940px; 
+	list-style: none;
+	padding: 10px 0 0 0; 
+	margin: 0 0 0 -10px; 
+	}
+ul.worktable-min li { 
+	float: left;
+	width: 140px; 
+	height: 190px;  
+	font-size: 12px; 
+	text-align: center; 
+	padding: 24px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear; 
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+	-webkit-backface-visibility: hidden;
+	}
+ul.worktable-min li img { 
+	-moz-opacity: 0.4; 
+	filter: alpha(opacity=40); 
+	opacity: 0.4; 
+	-webkit-transition: all .2s linear;
+	-webkit-backface-visibility: hidden;
+	}
+ul.worktable-min a {
+	color: #222; 
+	font-size: 14px; 
+	font-weight: bold; 
+	line-height: 20px;  
+	}
+ul.worktable-min li:hover { 
+	float: left; 
+	background-color: rgba(255,255,255,0.1);
+	padding: 24px; 
+	}
+ul.worktable-min li:hover a { 
+	color: #222; 
+	font-weight: bold; 
+	}
+ul.worktable-min li:hover img { 
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	}
+ul.worktable-min img { 
+	width: 140px; 
+	height: 140px; 
+	margin-bottom: 5px;
+	-moz-border-radius: 90px; 
+	-webkit-border-radius: 90px; 
+	border-radius: 90px;  
+	}
